@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
   final _formkey = GlobalKey<FormState>();
   
   moveToHome(BuildContext) async {
-    // if (_formkey.currentState!.validate()) {
+    if (_formkey.currentState!.validate()) {
       setState(() {
         changeButton = true;
       });
@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
       setState(() {
         changeButton = false;
       });
-    // }
+    }
   }
 
 
@@ -33,13 +33,14 @@ class _LoginPageState extends State<LoginPage> {
       color: Colors.white,
       child: SingleChildScrollView(
         child: Form(
+          key: _formkey,
           child: Column(
             children: [
               SizedBox(
                 height: 20.0,
               ),
               Image.asset(
-                "assets/images/shop.png",
+                "assets/images/login.png",
                 fit: BoxFit.cover,
               ),
               SizedBox(
