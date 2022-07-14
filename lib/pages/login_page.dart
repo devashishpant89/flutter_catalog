@@ -30,8 +30,8 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      // color: Colors.white,
-      // child: SingleChildScrollView(
+      color: Colors.white,
+      child: SingleChildScrollView(
         child: Form(
           child: Column(
             children: [
@@ -138,7 +138,7 @@ class _LoginPageState extends State<LoginPage> {
             ],
           ),
         ),
-      // ),
+      ),
     );
   }
 }
