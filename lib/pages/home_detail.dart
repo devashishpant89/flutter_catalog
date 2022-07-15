@@ -14,7 +14,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: 
         Container(
@@ -56,7 +58,10 @@ class HomeDetailPage extends StatelessWidget {
                       children: [
                 catalog.name.text.xl4.color(MyTheme.darkblueColor).bold.make(),
                 catalog.desc.text.textStyle(context.captionStyle).xl.make(),
-                10.heightBox,],
+                10.heightBox,
+                "Du zu dich ich nacht vögel der zürnen perlet verschwand jedoch. Zürntest darfst spät schönen du du was ja wangen, o oft nicht denkst grambefangen nacht im mal heimat schmilzt, die heimat stund' ich die bist du deine, perlet deine nacht komm es geliebet, schon und mein so perlet rast."
+                .text.textStyle(context.captionStyle).make().p16(),
+                ],
                     ).py64(),
                   ),
                 )
